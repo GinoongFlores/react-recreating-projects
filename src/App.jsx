@@ -17,7 +17,6 @@ function App() {
 			taskName: newTask,
 			complete: false,
 		};
-		console.log(todoList);
 		setTodoList(tasks.taskName !== "" ? [...todoList, tasks] : todoList);
 	};
 
