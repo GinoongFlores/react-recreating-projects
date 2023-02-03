@@ -1,0 +1,36 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.addTask {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.addTask input {
+	width: 100%;
+	padding: 16px;
+	font-size: 16px;
+}
+
+h2.tasks {
+	margin-top: 50px;
+}
+
+.todoList--task {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.taskName {
+	padding: 0.5rem;
+	margin: 0;
+}
