@@ -4,3 +4,10 @@
 	padding: 2rem;
 	text-align: center;
 }
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
