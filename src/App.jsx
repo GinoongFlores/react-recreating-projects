@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { Counter } from "./Counter";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -54,17 +55,16 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Count me in: </h1>
-			<h2>{count}</h2>
-			<div className="buttons">
-				<button onClick={increment}>INCREMENT</button>
-				<button onClick={decrement}>DECREMENT</button>
-				<button onClick={save}>SAVE</button>
-				<button onClick={reset}>RESET</button>
-				<button onClick={add}>ADD</button>
-			</div>
-
-			<h3>Previous entries: {counter}</h3>
-			<h3>Sum: {addAll}</h3>
+			<Counter
+				count={count}
+				incrementBtn={increment}
+				decrementBtn={decrement}
+				saveBtn={save}
+				resetBtn={reset}
+				addBtn={add}
+				counter={counter}
+				addAll={addAll}
+			/>
 		</div>
 	);
 }
