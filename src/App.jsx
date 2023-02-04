@@ -21,13 +21,13 @@ function App() {
 	};
 
 	const save = () => {
-		// count !== 0 && setCounter(counter + count + "-");
-		if (count !== 0) {
-			const updatedCounter = counter.endsWith("-")
-				? counter + count
-				: counter + "-" + count;
-			setCounter(updatedCounter);
-		}
+		count !== 0 && setCounter(counter + count + "-");
+		// if (count !== 0) {
+		// 	const updatedCounter = counter.endsWith("-")
+		// 		? counter + count
+		// 		: counter + count + "-";
+		// 	setCounter(updatedCounter);
+		// }
 	};
 
 	const add = () => {
