@@ -16,7 +16,7 @@ function App() {
 
 	const decrement = () => {
 		setCount(count - 1);
-		count === 0 && setCount(0); 
+		count === 0 && setCount(0);
 	};
 
 	const save = () => {
@@ -32,14 +32,13 @@ function App() {
 					.map(Number)
 					.reduce((accumulator, currentValue) => accumulator + currentValue),
 			]);
-
 			setAddOnce(true);
 		}
 	};
 
 	const reset = () => {
 		setCount(0);
-		setCounter(0);
+		setCounter("");
 		setAddAll([]);
 		setAddOnce(false);
 	};
