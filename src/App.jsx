@@ -5,9 +5,7 @@ import { Counter } from "./Counter";
 function App() {
 	const [count, setCount] = useState(0);
 	const [counter, setCounter] = useState("");
-
 	const [addAll, setAddAll] = useState([]);
-
 	const [addOnce, setAddOnce] = useState(false);
 
 	const increment = () => {
